@@ -4,3 +4,4 @@
 ※パッケージインストール:openCV,pytesseract
 
 ※インストール:tesseract
+
