@@ -101,8 +101,8 @@ def readimg(path):
             # 四角形を切り出す
             c_c = cut_t[y:y+h, x:x+w]
 
-            # 切り出した画像内の文字を読み取ります
-            text = pytesseract.image_to_string(c_c, config='--psm 10 --oem 3 -c tessedit_char_whitelist=123456789')
+            # 切り出した画像内の文字を読み取る
+            text = pytesseract.image_to_string(c_c, lang='eng', config='--psm 10 --oem 3 -c tessedit_char_whitelist=123456789')
 
             #空白の所に0を入れる
             if text == '':
