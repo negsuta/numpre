@@ -30,7 +30,7 @@ def check(data,x,y,num):
     for i in range(3):
         for j in range(3):
             #ボックス内に同じ数字があるかどうか
-            if data[box_x+i][box_y+j] == num and box_y + i !=y and box_x + j !=x:
+            if data[box_x+i][box_y+j] == num and box_x+i != x and box_y+j != y:
                 return False
     return True
 
